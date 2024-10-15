@@ -1,0 +1,6 @@
+import 'package:trivia/features/number_trivia/data/models/number_trivia_model.dart';
+
+abstract class NumberTriviaLocalDataSource {
+  Future<NumberTriviaModel> getLastNumbertrivia();
+  Future<void> cacheNumberTrivia(NumberTriviaModel triviaToCache);
+}
